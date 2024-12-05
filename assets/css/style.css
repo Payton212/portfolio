@@ -6,12 +6,13 @@ header{
     justify-content: space-between;
     flex-direction: row;
     align-items:end;
+    padding-bottom:.25%;
 }
 .contact{
   min-width:300px;
 }
-a {
-    margin: 0 0 0 10%;
+a ,h4 {
+    margin: 0 0 2% 10%;
     font-size: 20px;
     color:white;
     text-decoration: underline;
@@ -28,7 +29,6 @@ h1{
 }
 
 h2{
-    border-top: 3px solid black;
     border-right:3px solid black;
     font-size: 250%;
     margin: 0;
@@ -45,20 +45,29 @@ h2{
     border-right: 3px solid black;
     margin-bottom: 15px;
     margin-top:15px;
+    padding-top:80px;
     color:black;
     font-size: 60px;
+    text-decoration: none;
+    
  
 }
 
 section div {
     flex: 0 0 80%;
     margin-left:5%;
+    margin-top:3%;
 }
 p{
     font-size: 25px;
+    line-height:35px;
+    padding-right:30%;
+    padding-bottom:4%;
+    border-bottom: 3px solid black;
 }
 .side-bar{
     display: flex;
+    
 }
 body{
     margin:0;
@@ -67,6 +76,20 @@ body{
 }
 img{
     height:300px;
-    width:300;
-    
+    width:700px;
+    margin-right:10%;
+    border-right: 2px solid black;
+    border-bottom:2px solid black;
+    border-radius: 10px;
+    box-shadow:  3px 3px 2px 2px gray;
 }
+#img{
+    margin:0;
+}
+#img:hover{
+    opacity: 60%;
+}
+a:hover{
+    color:red;
+}
+
