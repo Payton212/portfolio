@@ -1,5 +1,5 @@
 /* About me css */
-html{
+body{
     background-color: rgb(19, 5, 40);
 }
 #nav-tab{
@@ -7,16 +7,12 @@ html{
     justify-content: flex-end;
     align-items: end;
 }
-.nav-item{
-padding-right:15px;
-}
 #family1, #family2, #family3, #family4{
      max-height: 600px;
-     max-width: 500px;
+     max-width: 400px;
      border-right: 2px solid lightcoral;
      flex: 0 0 20%;
      margin-right: 3%;
-     margin-left: 10%;
      margin-bottom: 5%;
      border-right: 2px solid lightcoral;
      border-bottom: 2px solid lightcoral;
@@ -42,45 +38,86 @@ div h3{
     margin-left:10%;
     padding-left: 10%;
     border-left: 3px solid lightcoral;
+    font-size: 25px;
+    line-height: 35px;
+    padding-right: 10%;
+    padding-bottom: 4%;
+    border-bottom: 3px solid lightcoral;
+    border-bottom-left-radius: 10px;
+    color: lightcoral;
     
 }
-#imageContainer{
-    height: 635px;
-    width:fit-content;
-    #treflip{
+#imageContainer1, #imageContainer2, #imageContainer3, #imageContainer4, #imageContainer5{
+    padding-left:5%;
+    height: 600px;
+    width: 400px;
+    padding-top: 5%;
+    padding-right:5%;
+    border-top: 3px solid lightcoral;
+    border-top-right-radius: 15px;
+    #treflip,
+        #hiking,
+        #ollie,
+        #snowBaby,
+        #line{
        display:none;
     }
 }
 
-#imageContainer:hover{
-    #family4{
+#imageContainer1:hover,
+#imageContainer2:hover,
+#imageContainer3:hover,
+#imageContainer4:hover,
+#imageContainer5:hover{
+    #family4, #family1, #family2, #family3{
         display:none;
     }
-    #treflip{
+
+    #treflip, #hiking, #ollie, #snowBaby, #line{
         display:block;
-        max-height: 635px;
+        max-height: 600px;
         max-width: 500px;
         border-right: 2px solid lightcoral;
         flex: 0 0 20%;
         margin-right: 3%;
-        margin-left: 10%;
         margin-bottom: 5%;
         border-right: 2px solid lightcoral;
         border-bottom: 2px solid lightcoral;
         border-radius: 10px;
         box-shadow: 3px 3px 2px 2px gray;
     }
+
+}
+    #imageContainer3:hover{
+        width:500px;
+        padding-left:132px;
+}
+#imageContainer5:hover{
+    width: 417px;
+    padding-left: 132px;
 }
 
 
-
-
+/*Nav page css*/
+#nav-item {
+    margin-right: 15px;
+    padding: 0 10px 3px 10px;
+}
+#nav-item:hover{
+    background-color:lightcoral;
+    color:rgb(19, 5, 40);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.active {
+    color:red;
+}
 
 
 
 /* portfolio css*/
 h2{
-    font-size: 40px;
+    font-size: 10px;
 }
 
 .header {
@@ -100,14 +137,17 @@ h1 {
     display: inline;
 }
 
-a,
+
 h4 {
     
     font-size: 20px;
     color: lightcoral;
     text-decoration: underline;
 }
-
+a{
+    font-size: 20px;
+    color: lightcoral;
+}
 h1 {
     font-size: 250%;
     margin-bottom: 0;
@@ -160,7 +200,7 @@ h4 {
 
 }
 
-p {
+#portP {
     font-size: 25px;
     line-height: 35px;
     padding-right: 30%;
@@ -194,17 +234,77 @@ body {
     margin: 0;
 }
 
-#img:hover {
-    opacity: 60%;
+#githubLink {
+    height: 300px;
+    width: 700px;
+    margin-right: 10%;
+    border-right: 2px solid lightcoral;
+    border-bottom: 2px solid lightcoral;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 2px gray;
+}
+.portImageContainer{
+    position:relative;
+    height:310px;
+    width: 650px;
+}
+#innerImg {
+    height: 50px;
+    width: 50px;
+    display: none;
+    position: absolute;
+    top:80px;
+    left:20px;
+}
+#youtubeImg{
+    display:none;
+    height:50px;
+    width:50px;
+    position:absolute;
+    top:140px;
+    left: 20px;
+}
+#employMeeText{
+    display:none;
+    position:absolute;
+    top:70px;
+    left:110px;
+    color:black;
+    font-size: 25px;
+    font-weight: bold;
+}
+#youtubeText{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 110px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+#img:hover{
+    transition: opacity 0.3s;
+    opacity: 40%;
+}
+.portImageContainer:hover {
+    transition:opacity 0.3s;
+    opacity: 40%;
+    #innerImg, #employMeeText, #youtubeImg, #youtubeText{
+        display: block;
+    }
+    
 }
 
-a:hover {
-    color: red;
-}
 /* css for ContactMe page*/
 .nameInput, .emailInput, .messageInput{
     display: flex;
     flex-direction:row;
+}
+.error-text{
+    margin-left: 10%;
+    padding-left: 2%;
+    font-size: 25px;
+    color: lightcoral;
 }
 #nameInput, #emailInput{
     margin-left:5%;
@@ -212,15 +312,18 @@ a:hover {
     height: 20px;
     width:20%;
 }
-#nameh2, #emailh2, #messageh2{
-    padding-right:5%;
+#nameh2, #emailh2{
+    padding-right: 8%;
+}
+#messageh2{
+padding-right:5%;
 }
 #messageInput{
     margin-left:5%;
     height:200px;
 }
 .submit{
-    display: flex;
+    display:flex;
     justify-content: end;
 }
 #submit{
@@ -228,7 +331,70 @@ a:hover {
     height:30px;
     width:70px;
 }
-#submit:hover {
-    color: blue;
+
+
+
+
+/* css for resume page*/
+
+.downloadResume{
+    display: flex;
+    justify-content: center;
+    margin-right:20%;
 }
 
+#resume1, #resume2{
+    margin-top:0;
+    margin-right:50px;
+    color:lightcoral;
+    font-size: 30px;
+    text-decoration: none;
+}
+.FrontEnd, .BackEnd{
+    display: flex;
+    margin-bottom: 5%;
+}
+li{
+    color:lightcoral;
+    font-size: 20px;
+    margin: 0px 0 5px 30px;
+}
+#firstLi{
+    margin-top:30px;
+}
+#lastLi{
+    margin-bottom:40px;
+}
+ul{
+    padding-bottom:5%;
+}
+.defenitonDiv{
+    width:500px;
+}
+#defenition{
+    color: lightcoral;
+    margin: 0 0 0 30px;
+    font-size: 20px;
+}
+#resume2:hover{
+    opacity: 60%;
+}
+li:hover{
+    color:red;
+}
+
+/*css for footer*/
+.footer{
+    display:flex;
+    justify-content: center;
+}
+#github,#linkedIn,#instagram{
+    height:50px;
+    width:50px;
+    margin: 5px 10px 15px 10px 
+}
+#github:hover,
+#linkedIn:hover,
+#instagram:hover{
+    opacity:60%;
+}

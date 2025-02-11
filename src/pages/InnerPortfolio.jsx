@@ -1,32 +1,29 @@
 
 import COHeaderImage from '../components/IMGS/COHeaderImage.png';
 import weatherIMG from '../components/IMGS/weatherIMG.png'
+import employMee from "../components/IMGS/employMee.png";
+import Github from "../components/IMGS/github-logo.png";
+import Youtube from "../components/IMGS/youtube.png";
 
 export default function Portfolio() {
     return (
       <div>
-    <header>
-        
-    
-            <h1>Payton Schmidt</h1>
-          
-        
-    </header>
+   
             <main>
                 <h2>My Projects</h2>
-                <div class = "pageTitle">
+                <div className = "pageTitle">
                 <h3>Portfolio</h3>
             </div>
 
 
-            <section class = "side-bar">
+            <section className = "side-bar">
              
                         <h4 id = "link" >like a local</h4>
                             <div id="portDiv">
                                 <a id = "img" href = "https://payton212.github.io/like-a-local/index.html ">
                             <img id = "portImg"src={COHeaderImage} alt="Header"/>
                             </a>
-                        <p>this is the first working website me and the rest of the members in my group created, i was respondible 
+                        <p id="portP">This is the first working website me and the rest of the members in my group created, i was respondible 
                             for the java and most of the html. the current purpose of this website is to act as a blog for users to store 
                             information about places they visited in certain cities.
                         </p>
@@ -35,18 +32,35 @@ export default function Portfolio() {
             </section>
 
 
-                    <section class = "side-bar">
+            <section className = "side-bar">
                         <h4 id = "link">weather you and I</h4>
-                        <div id="portDiv"> <a id = "img" href = "https://weather-you-and-i.onrender.com">
+                    <div id="portDiv"> <a id = "img" href = "https://weather-you-and-i.onrender.com">
                             <img id ="portImg" src={weatherIMG} alt="Header"/>
                         </a>
-                        <p>this is a weather app that fetches data through the weather api and returns you specified
+                        <p id="portP">This is a weather app that fetches data through the weather api and returns you specified
                             weather data based off of that city! 
                             (please give time for the server to restart I only have acces to a free render server 
                             and with inactivity the server stops until the server gets asked to respond)
                         </p>
-                    </div>
-                    </section> 
+                </div>
+            </section> 
+                <section className="side-bar">
+                    <h4 id="link"> EmployMee</h4>
+                    <div id="portDiv">
+                            <section className="portImageContainer">
+                        <img id="githubLink" src={employMee}/>
+                            <a id="employMeeA" href="https://github.com/Payton212/employMee">
+                                <img id="innerImg" src={Github} />
+                            </a> 
+                            <a href="https://youtu.be/Oq6G7ZnaNhY?si=bX5xTOk8LZX2VY8i">
+                                <img id="youtubeImg" src={Youtube} />
+                            </a>
+                             <p id="employMeeText"> ⬅ Feel free to fork this repo and see how it works!</p>
+                            <p id="youtubeText"> ⬅ Feel free to watch a demonstration instead of forking the repo! </p>
+                            </section>
+                   
+                    <p id="portP">This project showcases my knowledge of SQL and of creating database infrustructure this project can be seen if you fork the repository, or if you would like to see the project and don't want to or cannot fork the repo feel free to watch the demonstration video!</p></div>
+                </section>    
         
           </main>
     <footer>  
