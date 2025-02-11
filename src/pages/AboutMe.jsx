@@ -4,7 +4,7 @@ import family2 from "../components/IMGS/kickingWithMoMo.jpg";
 import family3 from "../components/IMGS/BigOllie.jpg";
 import PicOfMe from "../components/IMGS/PicOfMe.jpg";
 import Treflip from "../components/Videos/treflip.mp4";
-import BigBaby from "../components/Videos/BabyRunning.mp4";
+import BigBaby from "../components/Videos/babyRunning.mp4";
 import MoMo from "../components/Videos/hikingWithMoMo.mp4";
 import bigOllie from "../components/Videos/bigOllie.mp4";
 import Line from "../components/Videos/Line.mp4";
