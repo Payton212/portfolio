@@ -1,6 +1,6 @@
 
   ## Title
-        Portfolio
+        Payton-Schmidt
  
           
 ## License
@@ -23,8 +23,8 @@
 
 [Contact information](#contact)
          
-
-    
+![screen shot of deployed website!](./src/components/IMGS/portfolioScreen%20shot.jpg)
+  ## Website  [Payton-Schmidt](https://payton-schmidt.netlify.app/)
  ## Description
         this is a project I can send to employers to showcase My skills in react and other languages by rendering a single page application with multiple routes one that has a contact page, an about me page, a resume page, and a portfolio page that makes my other projects easily accesible
 
@@ -45,7 +45,7 @@
              
         - https://mit-license.org
 
-     
+  
     
   ## Contact
 

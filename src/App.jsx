@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Nav from './components/NavTabs';
 import Github from './components/IMGS/github-logo.png';
@@ -6,6 +7,9 @@ import instagram from './components/IMGS/instagram.png';
 
 function App() {
   // The Outlet component will conditionally swap between the different pages according to the URL
+  useEffect(() => {
+        document.title = "Payton-Schmidt";
+    }, []);
   return (
     <>
        <header>
