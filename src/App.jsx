@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Nav from './components/NavTabs';
 import Github from './components/IMGS/github-logo.png';
@@ -23,7 +23,7 @@ function App() {
         <Outlet />
       </main>
       <footer>
-        <div class="footer">
+        <div className="footer">
           <a  href="https://github.com/Payton212"><img id="github" src={Github}></img> </a>
           <a  href="www.linkedin.com/in/payton-schmidt-a77b0a28a"><img id="linkedIn" src={LinkedIn}></img></a>
           <a  href="https://www.instagram.com/the_schmitty_skater/"><img id="instagram" src={instagram}></img></a>
