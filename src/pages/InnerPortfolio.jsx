@@ -64,7 +64,7 @@ export default function Portfolio() {
                 </section>    
                 <section className = "side-bar">
              
-                        <h4 id = "link" >like a local</h4>
+                        <h4 id = "link" >Candidate Search</h4>
                             <div id="portDiv">
                                 <a id = "img" href = "https://find-my-employee.netlify.app/">
                             <img id = "portImg"src={CandidateSearch} alt="Header"/>
