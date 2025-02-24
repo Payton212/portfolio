@@ -4,6 +4,7 @@ import weatherIMG from '../components/IMGS/weatherIMG.png'
 import employMee from "../components/IMGS/employMee.png";
 import Github from "../components/IMGS/github-logo.png";
 import Youtube from "../components/IMGS/youtube.png";
+import CandidateSearch from "../components/IMGS/CandidateSearch.jpg";
 
 export default function Portfolio() {
     return (
@@ -61,6 +62,19 @@ export default function Portfolio() {
                    
                     <p id="portP">This project showcases my knowledge of SQL and of creating database infrustructure this project can be seen if you fork the repository, or if you would like to see the project and don't want to or cannot fork the repo feel free to watch the demonstration video!</p></div>
                 </section>    
+                <section className = "side-bar">
+             
+                        <h4 id = "link" >like a local</h4>
+                            <div id="portDiv">
+                                <a id = "img" href = "https://find-my-employee.netlify.app/">
+                            <img id = "portImg"src={CandidateSearch} alt="Header"/>
+                            </a>
+                        <p id="portP">
+                            This Project Uses the public Github API to search for candidates and display them on the home page fom there you can either delete the Candidate or save them to the saved candidates page where you can view them later. On the savedCandidates Page you can then decide to delete them. 
+                        </p>
+                        </div>
+                    
+            </section>
         
           </main>
     <footer>  
