@@ -5,6 +5,7 @@ import employMee from "../components/IMGS/employMee.png";
 import Github from "../components/IMGS/github-logo.png";
 import Youtube from "../components/IMGS/youtube.png";
 import CandidateSearch from "../components/IMGS/CandidateSearch.jpg";
+import ASocialAPI from "../components/IMGS/ASocialAPI.jpg";
 
 export default function Portfolio() {
     return (
@@ -74,7 +75,25 @@ export default function Portfolio() {
                         </p>
                         </div>
                     
-            </section>
+                </section>
+               
+                <section className="side-bar">
+                    <h4 id="link"> ASocialAPI</h4>
+                    <div id="portDiv">
+                            <section className="portImageContainer">
+                        <img id="githubLink" src={ASocialAPI}/>
+                            <a id="employMeeA" href="https://github.com/Payton212/ASocialAPI">
+                                <img id="innerImg" src={Github} />
+                            </a> 
+                            <a href="https://youtu.be/oIAuHUgMT2k?si=kp5a9EAYA1euqaSC">
+                                <img id="youtubeImg" src={Youtube} />
+                            </a>
+                             <p id="employMeeText"> ⬅ Feel free to fork this repo and see how it works! </p>
+                            <p id="youtubeText"> ⬅ Feel free to watch a demonstration instead of forking the repo! </p>
+                            </section>
+                   
+                    <p id="portP">So this is a social media API that works with mongoDB that you could use with a front end of your making to create a fully functional social media website!!!  </p></div>
+                </section>    
         
           </main>
     <footer>  
