@@ -42,7 +42,7 @@ export default function Portfolio() {
                                 <a id = "img" href = "https://pocketmechanic.onrender.com/">
                             <img id = "portImg"src={PocketMechanic} alt="Header"/>
                             </a>
-                        <p id="portP"> This is Pocket-Mechanic is a site much like Upwork geared towards normal people that 
+                        <p id="portP"> Pocket-Mechanic is a site much like Upwork geared towards normal people that 
                             don't know all there is to know about cars. When the site is complete you will be able to take pictures if applicable
                             a description and the budget, if a contractor thinks they can fix the issue within your budget. As of april 24th 2025 the 
                             back end is fully functional and uses graphQl for the back end, and uses JWT to allow users to sign up create posts and contractors can do the same! 
